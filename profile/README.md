@@ -41,6 +41,12 @@ Discover our primary open-source initiatives below:
 * 📦 **NPM:** `@matanetwork/sovereign-id`
 * 🛠️ `JavaScript` / `TypeScript`
 
+### 🎬 [ffmpeg](https://github.com/Remade-With-Rust/ffmpeg)
+> **A safe, modern, and pure-Rust reimagining of the industry-standard multimedia framework.**
+* 🌟 **Focus:** Demuxing, muxing, and processing media streams natively without relying on vulnerable C bindings. Built from the ground up for modern pipeline safety.
+* 📜 **License:** MIT / Apache-2.0
+* 🛠️ `Rust`
+
 ### 📹 [rusty_h264](https://github.com/Remade-With-Rust/rusty_h264)
 > **x264 remade with Rust.**
 * 🌟 **Focus:** Safe, robust pixel encoding and decoding targeting the H.264 video standard, eliminating the historical memory safety flaws found in legacy C-based media frameworks.
@@ -65,7 +71,7 @@ While **Rust** sits at the absolute core of our system programming goals, we use
 
 ## 🤝 Contributing & Community
 
-We are staunch believers in open-source collaboration. If you have an obsession with performance, memory safety, or are looking to build tools that prioritize user autonomy:
+ We are staunch believers in open-source collaboration. If you have an obsession with performance, memory safety, or are looking to build tools that prioritize user autonomy:
 
 1. **Fork** any of our repositories.
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
