@@ -1,6 +1,6 @@
 <div align="center">
   <h1>🦀 Remade With Rust 🦀</h1>
-  <p><strong>Rebuilding the foundations of the world in Rust for ultimate memory safety, blazing performance, and local-first reliability.</strong></p>
+  <p><strong>Rebuilding the foundation of the internet in Rust for ultimate memory safety, blazing performance, and local-first reliability.</strong></p>
   <p>🛡️ Powered by <a href="https://mata.network">@matanetwork</a> / mata.network's commitment to a decentralized, local-first ecosystem.</p>
 </div>
 
@@ -44,23 +44,17 @@ Discover our primary open-source initiatives below:
 * 📜 **License:** Dual MIT/Apache-2.0
 * 🛠️ `Rust`
 
-### 🗄️ [SpaceDB](https://github.com/Remade-With-Rust/spacedb)
+### 🗄️ [SpaceDB (MATA DB)](https://github.com/Remade-With-Rust/spacedb)
 > **A local-first, CRDT-native, mesh-replicated database built for a world without data centers.**
 
 * 🌟 **Focus:** Highly concurrent, distributed data storage that runs natively on the edge or locally without needing constant cloud connection.
 * 📜 **License:** Apache-2.0
 * 🛠️ `Rust`
 
-### 🎮 [Starfire](https://github.com/Remade-With-Rust/starfire)
+### 🎮 [Starfire](https://github.com/Remade-With-Rust/starfire) and [Comet](https://github.com/Remade-With-Rust/comet)
 > **High-performance, native Rust Sunshine-compatible GameStream client.**
 
 * 🌟 **Focus:** Low-latency PC gaming streaming client optimized natively for Windows and macOS.
-* 🛠️ `Rust`
-
-### ☄️ [Comet](https://github.com/Remade-With-Rust/comet)
-> **High-performance content streaming built for the local-first era.**
-
-* 🌟 **Focus:** Efficient, low-latency media delivery and streaming infrastructure written entirely in Rust.
 * 🛠️ `Rust`
 
 ---
