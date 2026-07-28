@@ -24,7 +24,7 @@ Our goal is simple: Eliminate runtime infrastructure calls, ensure native compil
 
 Discover our primary open-source initiatives below:
 
-### 🎬 [ffmpeg](https://github.com/Remade-With-Rust/ffmpeg)
+### 🎬 [ffmpeg](https://github.com/Remade-With-Rust/remade_ffmpeg_rs)
 > **A safe, modern, and pure-Rust reimagining of the industry-standard multimedia framework.**
 
 * 🌟 **Focus:** Demuxing, muxing, and processing media streams natively without relying on vulnerable C bindings. Built from the ground up for modern pipeline safety.
