@@ -60,6 +60,7 @@ While **Rust** sits at the absolute core of our system programming goals, we use
 
 - **Languages:** `Rust` 🦀 | `TypeScript` / `JavaScript` 🌐 
 - **Paradigms:** Conflict-Free Replicated Data Types (CRDTs), Local-First Architecture, Zero-Trust Architecture, Asynchronous I/O.
+- **BUILD THE MATA WAY** Use our coding requirements for your favorite AI to build ultra secure, high quality code. https://drive.google.com/file/d/1eXagLJuFBzHo0gKwTFHsXCm1fGDY_PON/view?usp=drive_link
 
 ---
 
