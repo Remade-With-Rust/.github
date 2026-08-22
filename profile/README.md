@@ -1,6 +1,6 @@
 <div align="center">
   <h1>🦀 Remade With Rust 🦀</h1>
-  <p><strong>Rebuilding the foundation of the internet in Rust for ultimate memory safety, blazing performance, and local-first reliability.</strong></p>
+  <p><strong>Rebuilding the internet in Rust. Ultimate memory safety, blazing performance, and sovereign.</strong></p>
   <p>🛡️ Powered by <a href="https://mata.network">@matanetwork</a> / mata.network's commitment to a decentralized, local-first ecosystem.</p>
 </div>
 
