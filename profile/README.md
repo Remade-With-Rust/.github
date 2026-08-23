@@ -18,6 +18,8 @@ In a software landscape plagued by memory vulnerabilities and over-centralized c
 
 Our goal is simple: Eliminate runtime infrastructure calls, ensure native compile-time safety, and deliver zero-cost abstractions for the modern web.
 
+Access our most important <a href="[https://claude.ai/code/artifact/67cb6256-2326-4dc7-8d65-545b0a70a30e](https://claude.ai/code/artifact/67cb6256-2326-4dc7-8d65-545b0a70a30e)">AI skills to building a new internet</a>.
+
 ---
 
 ## 🚀 Key Projects
