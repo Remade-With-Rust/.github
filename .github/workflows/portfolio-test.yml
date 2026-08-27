@@ -1,0 +1,106 @@
+# Portfolio test harness — the shared green that gates a dependency rollout.
+#
+# Lives in Remade-With-Rust/.github and is called by a small caller workflow in
+# each consumer repository. One definition, one place to change it.
+#
+# Why a reusable workflow rather than a central dispatcher: called this way the
+# run attaches to the pull request natively, so the green that gates the rollout
+# is the same green a human would look at -- not a claim from a tool running
+# somewhere else. Each repository also checks ITSELF out with its own
+# GITHUB_TOKEN, so no cross-repository credential exists in this design at all.
+#
+# Whatever is being tested lives in the branch. A pre-publish candidate is tested
+# by committing a [patch.crates.io] block to the branch, which means the pull
+# request diff shows exactly what was built.
+
+name: portfolio-test
+
+on:
+  workflow_call:
+    inputs:
+      command:
+        description: "cargo subcommand: check (fast gate) or test"
+        required: false
+        default: test
+        type: string
+      target:
+        description: "Cargo target triple. Some repositories default to wasm32 and cannot run tests there."
+        required: false
+        default: ""
+        type: string
+      features:
+        description: "Extra flags, e.g. --all-features or --no-default-features"
+        required: false
+        default: ""
+        type: string
+      runs-on:
+        description: "Runner label. Windows-only media stacks need windows-latest."
+        required: false
+        default: ubuntu-latest
+        type: string
+      toolchain:
+        description: "Rust toolchain"
+        required: false
+        default: stable
+        type: string
+      apt-packages:
+        description: "Space-separated apt packages some codec crates need"
+        required: false
+        default: ""
+        type: string
+
+jobs:
+  test:
+    name: ${{ inputs.command }}
+    runs-on: ${{ inputs.runs-on }}
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Toolchain
+        uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: ${{ inputs.toolchain }}
+          targets: ${{ inputs.target }}
+
+      - uses: Swatinem/rust-cache@v2
+        with:
+          # Distinct from a repository's own CI cache: a rollout branch resolves
+          # a different graph, and sharing one key would poison both.
+          key: portfolio-test-${{ inputs.command }}-${{ inputs.target }}
+
+      - name: System packages
+        if: inputs.apt-packages != '' && runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y ${{ inputs.apt-packages }}
+
+      # The single most dangerous failure mode in this whole design is a build
+      # that goes green against the OLD dependency and gets reported as proof the
+      # new one works. Cargo only *warns* when a [patch] entry matches nothing,
+      # so without this the rollout would ship on a false green.
+      - name: Guard against a patch that matched nothing
+        shell: bash
+        run: |
+          set -euo pipefail
+          if ! grep -q '^\[patch\.' Cargo.toml 2>/dev/null; then
+            echo "no [patch] section -- nothing to guard"
+            exit 0
+          fi
+          out=$(cargo metadata --format-version 1 2>&1 >/dev/null || true)
+          if printf '%s' "$out" | grep -qi 'was not used in the crate graph\|unused patch'; then
+            echo "::error::a [patch] entry matched nothing -- this build would be a false green"
+            printf '%s\n' "$out"
+            exit 1
+          fi
+          echo "patch resolved into the graph"
+
+      - name: cargo ${{ inputs.command }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          args=""
+          if [ -n "${{ inputs.target }}" ]; then args="$args --target ${{ inputs.target }}"; fi
+          if [ -n "${{ inputs.features }}" ]; then args="$args ${{ inputs.features }}"; fi
+          # --locked first so a stale lockfile is a visible failure rather than a
+          # silent re-resolve; fall back for repositories that do not commit one.
+          cargo ${{ inputs.command }} --workspace --all-targets --locked $args \
+            || cargo ${{ inputs.command }} --workspace --all-targets $args
