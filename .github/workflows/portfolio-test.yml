@@ -48,6 +48,15 @@ on:
         required: false
         default: ""
         type: string
+      exclude:
+        description: >-
+          Space-separated workspace members to leave out, e.g. a UI crate whose
+          system GUI stack a headless runner has no business installing. Use it
+          only where the repository excludes the same member from its own CI --
+          anything excluded here is untested, and the gate says green anyway.
+        required: false
+        default: ""
+        type: string
 
 jobs:
   test:
@@ -100,6 +109,7 @@ jobs:
           args=""
           if [ -n "${{ inputs.target }}" ]; then args="$args --target ${{ inputs.target }}"; fi
           if [ -n "${{ inputs.features }}" ]; then args="$args ${{ inputs.features }}"; fi
+          for m in ${{ inputs.exclude }}; do args="$args --exclude $m"; done
           # --locked first so a stale lockfile is a visible failure rather than a
           # silent re-resolve; fall back for repositories that do not commit one.
           cargo ${{ inputs.command }} --workspace --all-targets --locked $args \
