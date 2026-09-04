@@ -67,6 +67,17 @@ Discover our primary open-source initiatives below:
 
 ---
 
+## 🧭 Start here: the build playbook
+
+### 📘 [building-the-new-internet](https://github.com/Remade-With-Rust/.github/tree/main/skills/building-the-new-internet)
+> **One skill that hands you the whole stack, ready to deploy onto the MATA distributed cloud.**
+
+* 🌟 **Focus:** What to use for identity, storage, media, AI, allocation and compression — plus the architecture, the deploy seams, and the measurement discipline that make an app mesh-ready on day one.
+* 📖 **Read it:** as a human, or drop it into your coding agent's skills folder.
+* 📜 **License:** MIT
+
+---
+
 ## 🛠️ Tech Stack & Toolkit
 
 While **Rust** sits at the absolute core of our system programming goals, we use a tailored stack to push our innovations natively across platforms and runtime targets:
