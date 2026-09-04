@@ -1,7 +1,7 @@
 <div align="center">
-  <h1>🦀 Remade With Rust 🦀</h1>
+  <h1>Remade With Rust</h1>
   <p><strong>Rebuilding the internet in Rust. Ultimate memory safety, blazing performance, and sovereign.</strong></p>
-  <p>🛡️ Powered by <a href="https://mata.network">@matanetwork</a> / mata.network's commitment to a decentralized, local-first ecosystem.</p>
+  <p>Powered by <a href="https://mata.network">@matanetwork</a> / mata.network's commitment to a decentralized, local-first ecosystem.</p>
 </div>
 
 <p align="center">
@@ -12,7 +12,7 @@
 
 ---
 
-## 🗺️ Core Mission
+## Core Mission
 
 In a software landscape plagued by memory vulnerabilities and over-centralized cloud infrastructure, **Remade With Rust** takes the most critical building blocks of media, identity, databases, and streaming, and rewrites them entirely from scratch using Rust.
 
@@ -28,46 +28,41 @@ Access our most important <a href="https://claude.ai/code/artifact/67cb6256-2326
 
 ---
 
-## 🚀 Key Projects
+## Key Projects
 
 Discover our primary open-source initiatives below:
 
-### 🎬 [ffmpeg](https://github.com/Remade-With-Rust/remade_ffmpeg_rs)
+### [ffmpeg](https://github.com/Remade-With-Rust/remade_ffmpeg_rs)
 > **A safe, modern, and pure-Rust reimagining of the industry-standard multimedia framework.**
 
-* 🌟 **Focus:** Demuxing, muxing, and processing media streams natively without relying on vulnerable C bindings. Built from the ground up for modern pipeline safety.
-* 📜 **License:** MIT / Apache-2.0
-* 🛠️ `Rust`
+* **Focus:** Demuxing, muxing, and processing media streams natively without relying on vulnerable C bindings. Built from the ground up for modern pipeline safety.
+* **License:** MIT / Apache-2.0
 
-### 🤖 [FFAI](https://github.com/Remade-With-Rust/ffai)
+### [FFAI](https://github.com/Remade-With-Rust/ffai)
 > **A pure-Rust, local-first equivalent of ffmpeg purpose-built for AI media pipelines.**
 
-* 🌟 **Focus:** High-performance encoding, decoding, and transformation of media streams optimized for AI workloads — entirely memory-safe and free of C dependencies. (Pre-release)
-* 🛠️ `Rust`
+* **Focus:** High-performance encoding, decoding, and transformation of media streams optimized for AI workloads — entirely memory-safe and free of C dependencies. (Pre-release)
 
-### 🆔 [mID (MATA mID)](https://github.com/Remade-With-Rust/mid)
+### [mID (MATA mID)](https://github.com/Remade-With-Rust/mid)
 > **Permissionless, self-issued digital identity ownership for Rust.**
 
-* 🌟 **Focus:** Verifies sign-in tokens entirely locally with absolute **zero infrastructure calls**. Perfect for high-privacy and decentralization.
-* 📜 **License:** Dual MIT/Apache-2.0
-* 🛠️ `Rust`
+* **Focus:** Verifies sign-in tokens entirely locally with absolute **zero infrastructure calls**. Perfect for high-privacy and decentralization.
+* **License:** Dual MIT/Apache-2.0
 
-### 🗄️ [SpaceDB (MATA DB)](https://github.com/Remade-With-Rust/spacedb)
+### [SpaceDB (MATA DB)](https://github.com/Remade-With-Rust/spacedb)
 > **A local-first, CRDT-native, mesh-replicated database built for a world without data centers.**
 
-* 🌟 **Focus:** Highly concurrent, distributed data storage that runs natively on the edge or locally without needing constant cloud connection.
-* 📜 **License:** Apache-2.0
-* 🛠️ `Rust`
+* **Focus:** Highly concurrent, distributed data storage that runs natively on the edge or locally without needing constant cloud connection.
+* **License:** Apache-2.0
 
-### 🎮 [Starfire](https://github.com/Remade-With-Rust/starfire) and [Comet](https://github.com/Remade-With-Rust/comet)
+### [Starfire](https://github.com/Remade-With-Rust/starfire) and [Comet](https://github.com/Remade-With-Rust/comet)
 > **High-performance, native Rust Sunshine-compatible GameStream client.**
 
-* 🌟 **Focus:** Low-latency PC gaming streaming client optimized natively for Windows and macOS.
-* 🛠️ `Rust`
+* **Focus:** Low-latency PC gaming streaming client optimized natively for Windows and macOS.
 
 ---
 
-## 🛠️ Tech Stack & Toolkit
+## Tech Stack & Toolkit
 
 While **Rust** sits at the absolute core of our system programming goals, we use a tailored stack to push our innovations natively across platforms and runtime targets:
 
