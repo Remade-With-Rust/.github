@@ -20,7 +20,7 @@ Our goal is simple: Eliminate runtime infrastructure calls, ensure native compil
 
 ---
 
-## In The Wild with<font color="#4b2ad5"> 137,866 </font>Active Installs
+## In The Wild with 137,866 Active Installs
 
 FREE RAG Converter Online -- <a href="https://RAGconverter.com">RAGconverter.com</a>
 
