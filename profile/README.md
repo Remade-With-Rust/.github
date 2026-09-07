@@ -71,7 +71,7 @@ While **Rust** sits at the absolute core of our system programming goals, we use
 
 ---
 
-## 🤝 Contributing & Community
+## Contributing & Community
 
 We are staunch believers in open-source collaboration. If you have an obsession with performance, memory safety, or are looking to build tools that prioritize user autonomy:
 
