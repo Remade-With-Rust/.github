@@ -22,9 +22,11 @@ Our goal is simple: Eliminate runtime infrastructure calls, ensure native compil
 
 ## In The Wild with 151,877 Active Installs
 
-FREE RAG Converter Online -- <a href="https://RAGconverter.com">RAGconverter.com</a>
+<a href="https://mata.network">MATA Disco</a> is a sovereign distributed cloud and digital freedom toolkit enabling ownership and accessibility of data.
 
-Access our most important <a href="https://claude.ai/code/artifact/67cb6256-2326-4dc7-8d65-545b0a70a30e">AI skills to building a new internet</a>.
+Build the new internet with our <a href="https://claude.ai/code/artifact/67cb6256-2326-4dc7-8d65-545b0a70a30e">AI skills for Rust</a>.
+
+FREE RAG Converter Online -- <a href="https://RAGconverter.com">RAGconverter.com</a>
 
 ---
 
