@@ -14,9 +14,11 @@
 
 ## Core Mission
 
-In a software landscape plagued by memory vulnerabilities and over-centralized cloud infrastructure, **Remade With Rust** takes the most critical building blocks of media, identity, databases, and streaming, and rewrites them entirely from scratch using Rust.
+Remake the internet in Rust. Eliminate an entire network attack surface by overhauling 30+ year old software into a modern architecture. 
 
-Our goal is simple: Eliminate runtime infrastructure calls, ensure native compile-time safety, and deliver zero-cost abstractions for the modern web.
+Memory. Media. Transport. AI. Everything.
+
+Join the rusty revolution.
 
 ---
 
