@@ -26,7 +26,7 @@ Join the rusty revolution.
 
 <a href="https://mata.network">MATA Disco</a> is a sovereign distributed cloud and digital freedom toolkit enabling ownership and accessibility of data.
 
-Build the new internet with our <a href="https://claude.ai/code/artifact/67cb6256-2326-4dc7-8d65-545b0a70a30e">AI skills for Rust</a>.
+Build the new internet with our <a href="https://claude.ai/code/artifact/67cb6256-2326-4dc7-8d65-545b0a70a30e">AI skills for Rust</a>. Build on any platform with security by design.
 
 FREE RAG Converter Online -- <a href="https://RAGconverter.com">RAGconverter.com</a>
 
