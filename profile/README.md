@@ -22,7 +22,7 @@ Join the rusty revolution.
 
 ---
 
-## In The Wild with 151,877 Active Installs
+## In The Wild with 155,537 Active Installs
 
 <a href="https://mata.network">MATA Disco</a> is a sovereign distributed cloud and digital freedom toolkit enabling ownership and accessibility of data.
 
