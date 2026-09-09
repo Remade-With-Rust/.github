@@ -16,7 +16,7 @@
 
 Remake the internet in Rust. Eliminate an entire network attack surface by overhauling 30+ year old software into a modern architecture. 
 
-Memory. Media. Transport. AI. Everything.
+Identity. Memory. Media. Transport. AI. Everything.
 
 Join the rusty revolution.
 
