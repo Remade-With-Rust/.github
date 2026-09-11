@@ -24,7 +24,7 @@ Join the rusty revolution.
 
 ## In The Wild with 155,537 Active Installs
 
-<a href="https://mata.network">MATA Disco</a> is a sovereign distributed cloud and digital freedom toolkit enabling ownership and accessibility of data.
+<a href="https://mata.network">Disco Party</a> is a sovereign distributed cloud and digital freedom toolkit by MATA enabling ownership and accessibility of data.
 
 Build the new internet with our <a href="https://claude.ai/code/artifact/67cb6256-2326-4dc7-8d65-545b0a70a30e">AI skills for Rust</a>. Create on any platform with security by design.
 
