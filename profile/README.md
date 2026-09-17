@@ -22,7 +22,7 @@ Join the rusty revolution.
 
 ---
 
-## In The Wild with 155,537 Active Installs
+## In The Wild with 199.828 Active Installs
 
 <a href="https://mata.network">Disco Party</a> is a sovereign distributed cloud and digital freedom toolkit by MATA enabling ownership and accessibility of data.
 
@@ -47,14 +47,14 @@ Discover our primary open-source initiatives below:
 
 * **Focus:** High-performance encoding, decoding, and transformation of media streams optimized for AI workloads — entirely memory-safe and free of C dependencies. (Pre-release)
 
-### [Janus — ESP32 remade in Rust](https://github.com/Remade-With-Rust/rusty_esp_arduino)
+### [rusty_ESP | ESP32 remade in Rust](https://github.com/Remade-With-Rust/rusty_esp_arduino)
 > **The Espressif ESP32 / Arduino application portfolio remade as memory-safe Rust packages, so a home's devices belong to its home computer — not to a vendor cloud.**
 
 * **Focus:** Nine independent packages with one dependency direction — [`rusty_esp_core`](https://github.com/Remade-With-Rust/rusty_esp_core) (shared types and the clock / rng / key-value seams), [`rusty_esp_dsp`](https://github.com/Remade-With-Rust/rusty_esp_dsp), [`rusty_esp_image`](https://github.com/Remade-With-Rust/rusty_esp_image) (esp32-camera and esp_jpeg), [`rusty_esp_video`](https://github.com/Remade-With-Rust/rusty_esp_video) (MJPEG, H.264, RTP), [`rusty_esp_audio`](https://github.com/Remade-With-Rust/rusty_esp_audio) (I2S/PDM, Opus, FLAC), [`rusty_esp_signal`](https://github.com/Remade-With-Rust/rusty_esp_signal) (Wi-Fi CSI radar, LoRa, BLE provisioning), [`rusty_esp_mid`](https://github.com/Remade-With-Rust/rusty_esp_mid) (mID on the chip), [`rusty_esp_iroh`](https://github.com/Remade-With-Rust/rusty_esp_iroh) (the iroh mesh on the chip) and [`rusty_esp_arduino`](https://github.com/Remade-With-Rust/rusty_esp_arduino) (the `setup`/`loop` sketch facade). Pure Rust, no C in the application image, `no_std` cores with ESP-IDF and bare-metal backends.
 * **MATA Home Computer:** a device mints its own `did:mata` with the key at rest in encrypted NVS, advertises itself on the LAN, and is **adopted** by the home computer with a signed grant — no vendor cloud, no claiming service, no account. Camera, microphone, radar and telemetry reach the home computer over iroh (QUIC with pure-Rust TLS) and nothing else; every radio frame carries an mID signature; firmware updates are maker-signed, written to a second slot, and rolled back by the bootloader if the new image never comes up. Verified on silicon (XIAO ESP32-S3 Sense, AI-Thinker ESP32-CAM): provisioning from a browser over BLE, the camera page, adoption that survives a hard reset, and 721 of 721 media packets to a subscriber over the board's own network.
 * **License:** MIT / Apache-2.0 — the 0.1 crates are on [crates.io](https://crates.io/search?q=rusty_esp), early and said so.
 
-### [rusty_RTOS (Kairos)](https://github.com/Remade-With-Rust/rusty_rtos_core)
+### [rusty_RTOS | FreeRTOS remade in Rust](https://github.com/Remade-With-Rust/rusty_rtos_core)
 > **FreeRTOS remade in Rust: the kernel, the ports, the heaps and the standard demo tasks, traced against the C kernel.**
 
 * **Focus:** The fixed-priority preemptive scheduler with task notifications, queues, semaphores, mutexes with priority inheritance, software timers, event groups and stream/message buffers, as a pure state machine over a `Port` seam. Handles are generational indices, never pointers; `#![forbid(unsafe_code)]` everywhere except the fenced context switch and vector table of the Cortex-M, RISC-V and Xtensa ports; a C ABI relinks unmodified FreeRTOS programs, and the standard demo tasks pass as the conformance corpus.
