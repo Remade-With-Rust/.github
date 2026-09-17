@@ -22,7 +22,7 @@ Join the rusty revolution.
 
 ---
 
-## In The Wild with 199.828 Active Installs
+## In The Wild with 199,828 Active Installs
 
 <a href="https://mata.network">Disco Party</a> is a sovereign distributed cloud and digital freedom toolkit by MATA enabling ownership and accessibility of data.
 
