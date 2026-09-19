@@ -47,19 +47,22 @@ Discover our primary open-source initiatives below:
 
 * **Focus:** High-performance encoding, decoding, and transformation of media streams optimized for AI workloads — entirely memory-safe and free of C dependencies. (Pre-release)
 
-### [Janus rusty_ESP | ESP32 remade in Rust](https://github.com/Remade-With-Rust/rusty_esp_arduino)
-> **The Espressif ESP32 / Arduino application portfolio remade as memory-safe Rust packages, so a home's devices belong to its home computer — not to a vendor cloud.**
+### [Janus — rusty_esp | ESP32 remade in Rust](https://github.com/Remade-With-Rust/rusty_esp_arduino)
+> **The Espressif ESP32 / Arduino portfolio remade as memory-safe Rust packages, so a home's devices belong to its home computer — not to a vendor cloud.**
 
-* **Focus:** Nine independent packages with one dependency direction — [`rusty_esp_core`](https://github.com/Remade-With-Rust/rusty_esp_core) (shared types and the clock / rng / key-value seams), [`rusty_esp_dsp`](https://github.com/Remade-With-Rust/rusty_esp_dsp), [`rusty_esp_image`](https://github.com/Remade-With-Rust/rusty_esp_image) (esp32-camera and esp_jpeg), [`rusty_esp_video`](https://github.com/Remade-With-Rust/rusty_esp_video) (MJPEG, H.264, RTP), [`rusty_esp_audio`](https://github.com/Remade-With-Rust/rusty_esp_audio) (I2S/PDM, Opus, FLAC), [`rusty_esp_signal`](https://github.com/Remade-With-Rust/rusty_esp_signal) (Wi-Fi CSI radar, LoRa, BLE provisioning), [`rusty_esp_mid`](https://github.com/Remade-With-Rust/rusty_esp_mid) (mID on the chip), [`rusty_esp_iroh`](https://github.com/Remade-With-Rust/rusty_esp_iroh) (the iroh mesh on the chip) and [`rusty_esp_arduino`](https://github.com/Remade-With-Rust/rusty_esp_arduino) (the `setup`/`loop` sketch facade). Pure Rust, no C in the application image, `no_std` cores with ESP-IDF and bare-metal backends.
-* **MATA Home Computer:** a device mints its own `did:mata` with the key at rest in encrypted NVS, advertises itself on the LAN, and is **adopted** by the home computer with a signed grant — no vendor cloud, no claiming service, no account. Camera, microphone, radar and telemetry reach the home computer over iroh (QUIC with pure-Rust TLS) and nothing else; every radio frame carries an mID signature; firmware updates are maker-signed, written to a second slot, and rolled back by the bootloader if the new image never comes up. Verified on silicon (XIAO ESP32-S3 Sense, AI-Thinker ESP32-CAM): provisioning from a browser over BLE, the camera page, adoption that survives a hard reset, 721 of 721 media packets to a subscriber over the board's own network, and a maker-signed update written into the second slot, booted, and kept after a hard reset.
+* **Focus:** Nine packages, one dependency direction: [`core`](https://github.com/Remade-With-Rust/rusty_esp_core), [`dsp`](https://github.com/Remade-With-Rust/rusty_esp_dsp), [`image`](https://github.com/Remade-With-Rust/rusty_esp_image), [`video`](https://github.com/Remade-With-Rust/rusty_esp_video), [`audio`](https://github.com/Remade-With-Rust/rusty_esp_audio), [`signal`](https://github.com/Remade-With-Rust/rusty_esp_signal), [`mid`](https://github.com/Remade-With-Rust/rusty_esp_mid), [`iroh`](https://github.com/Remade-With-Rust/rusty_esp_iroh) and [`arduino`](https://github.com/Remade-With-Rust/rusty_esp_arduino). Pure Rust, no C in the application image.
+* **MATA Home Computer:** a device mints its own `did:mata`, keeps the key in encrypted NVS, and is **adopted** by a signed grant — no vendor cloud, no claiming service, no account.
+* **Verified on silicon:** BLE provisioning from a browser, adoption that survives a hard reset, **721 of 721** media packets over the board's own network, and a maker-signed A/B update booted and kept.
 * **License:** MIT / Apache-2.0 — the 0.1 crates are on [crates.io](https://crates.io/search?q=rusty_esp), early and said so.
 
-### [Kairos rusty_RTOS | FreeRTOS remade in Rust](https://github.com/Remade-With-Rust/rusty_rtos_core)
-> **FreeRTOS remade in Rust: the kernel, the ports, the heaps and the standard demo tasks, traced against the C kernel.**
+### [Kairos — rusty_rtos | FreeRTOS remade in Rust](https://github.com/Remade-With-Rust/kairos)
+> **FreeRTOS remade in Rust, and proved line by line against the C kernel's own execution trace.**
 
-* **Focus:** The fixed-priority preemptive scheduler with task notifications, queues, semaphores, mutexes with priority inheritance, software timers, event groups and stream/message buffers, as a pure state machine over a `Port` seam. Handles are generational indices, never pointers; `#![forbid(unsafe_code)]` everywhere except the fenced context switch and vector table of the Cortex-M, RISC-V and Xtensa ports; a C ABI relinks unmodified FreeRTOS programs, and the standard demo tasks pass as the conformance corpus.
-* **MATA Home Computer:** the bare-metal half of the same story. A sensor with no room for ESP-IDF runs the Janus `no_std` packages on Kairos and is fronted by an iroh bridge, so the smallest device on the LAN still has a DID, signed frames and an owner. `rusty_rtos_core` is public here and the family is on [crates.io](https://crates.io/search?q=rusty_rtos).
-* **License:** MIT / Apache-2.0
+* **Focus:** The scheduler and its IPC — tasks, queues, semaphores, priority-inheriting mutexes, timers, event groups, stream buffers — as a pure state machine over a `Port` seam. Generational handles, never pointers; `#![forbid(unsafe_code)]` outside the fenced context switch.
+* **Also proved this way:** unmodified FreeRTOS demo programs relink through a C ABI and pass their own checkers, and coreMQTT is remade to **all 218 of its 218 functions**.
+* **MATA Home Computer:** the bare-metal half. A sensor too small for ESP-IDF runs the Janus `no_std` packages on Kairos behind an iroh bridge — still a DID, signed frames, an owner.
+* **License:** MIT / Apache-2.0 — the family is on [crates.io](https://crates.io/search?q=rusty_rtos).
+
 
 ### [MID (MATA sovereign identity)](https://github.com/Remade-With-Rust/mid)
 > **Permissionless, self-issued digital identity ownership for Rust.**
