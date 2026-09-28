@@ -76,7 +76,7 @@ Discover our primary open-source initiatives below:
 * **Focus:** Highly concurrent, distributed data storage that runs natively on the edge or locally without needing constant cloud connection.
 * **License:** Apache-2.0
 
-### [Starfire](https://github.com/Remade-With-Rust/starfire) and [Comet](https://github.com/Remade-With-Rust/comet)
+### [Starfire](https://github.com/Remade-With-Rust/starfire) and [Comet](https://github.com/Remade-With-Rust/comet) (Local Gaming)
 > **High-performance, native Rust Sunshine-compatible GameStream client.**
 
 * **Focus:** Low-latency PC gaming streaming client optimized natively for Windows and macOS.
