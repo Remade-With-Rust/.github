@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Remade With Rust</h1>
-  <p>Powered by <a href="https://mata.network">@matanetwork</a> / mata.network's commitment to a decentralized, local-first ecosystem.</p>
+  <p>Powered by <a href="https://mata.network">@matanetwork</a> / our commitment to a decentralized, local-first world</p>
 </div>
 
 <p align="center">
