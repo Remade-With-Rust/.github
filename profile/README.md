@@ -31,8 +31,8 @@ Join the rusty revolution.
 > [DLDeploy.com](https://DLDEPLOY.COM) uses over a dozen Remade with Rust portfolio tools to provide browser based
 > AI, and deploys the entire rusty_ESP portfolio for zero-C Espressif technology on ESP-32.
 
-> [RAG Converter](https://ragconverter.com) is a browser based, completely local AI tool deploying 3 state of the art
-> tools to do live conversion of files to RAG data, right in front of you.
+> [RAG Converter](https://ragconverter.com) is a browser based, completely local AI tool deploying Mercury and Carmenta to do local,
+> realtime conversion of business documents to RAG data. API built for businesses to make emails, pdf, images, and videos available to AI.
 
 > Build the new internet with our <a href="https://drive.google.com/drive/folders/1VjvP1zSJWH1DmkTqL1qEPt3OM8Ub8jPX?usp=drive_link">AI skills for Rust</a>. Create on any platform with security by design.
 
