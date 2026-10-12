@@ -14,11 +14,13 @@
 
 ## Core Mission
 
-Remake the internet in Rust. Eliminate an entire network attack surface by overhauling 30+ year old software into a modern architecture. 
+Remake the internet in Rust and eliminate an entire network attack surface. 
 
-Identity. Memory. Media. Transport. AI. Robotics. Everything.
+Media. Mind. Memory. Identity. Edge. Trust. AI. Robotics. Everything.
 
 Join the rusty revolution.
+
+<a href="https://remadewithrust.com">remadewithrusty.com</a>
 
 ---
 
