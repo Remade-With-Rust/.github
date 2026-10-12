@@ -24,11 +24,16 @@ Join the rusty revolution.
 
 ## In The Wild with 423,295 Active Installs
 
-<a href="https://mata.network">Disco Party</a> is a sovereign distributed cloud and digital freedom toolkit by MATA enabling ownership and accessibility of data.
+> [MATA Network](https://mata.network) is hosting the greatest Disco Party on Earth. A Disco Party is a
+> sovereign distributed cloud and digital freedom toolkit by MATA enabling ownership and accessibility of data.
 
-Build the new internet with our <a href="https://drive.google.com/drive/folders/1VjvP1zSJWH1DmkTqL1qEPt3OM8Ub8jPX?usp=drive_link">AI skills for Rust</a>. Create on any platform with security by design.
+> [DLDeploy.com](https://DLDEPLOY.COM) uses over a dozen Remade with Rust portfolio tools to provide browser based
+> AI, and deploys the entire rusty_ESP portfolio for zero-C Espressif technology on ESP-32.
 
-FREE RAG Converter Online -- <a href="https://RAGconverter.com">RAGconverter.com</a>
+> [RAG Converter](https://ragconverter.com) is a browser based, completely local AI tool deploying 3 state of the art
+> tools to do live conversion of files to RAG data, right in front of you.
+
+> Build the new internet with our <a href="https://drive.google.com/drive/folders/1VjvP1zSJWH1DmkTqL1qEPt3OM8Ub8jPX?usp=drive_link">AI skills for Rust</a>. Create on any platform with security by design.
 
 ---
 
