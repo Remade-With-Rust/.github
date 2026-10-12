@@ -20,7 +20,7 @@ Media. Mind. Memory. Identity. Edge. Trust. AI. Robotics. Everything.
 
 Join the rusty revolution.
 
-<a href="https://remadewithrust.com">remadewithrusty.com</a>
+<a href="https://remadewithrust.com">remadewithrust.com</a>
 
 ---
 
