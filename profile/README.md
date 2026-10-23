@@ -23,7 +23,7 @@ Join the rusty revolution.
 
 ---
 
-## In The Wild with 471,661 Active Installs
+## In The Wild with 503,839 Active Installs
 
 > [MATA Network](https://mata.network) is hosting the greatest Disco Party on Earth. A Disco Party is a
 > sovereign distributed cloud and digital freedom toolkit by MATA enabling ownership and accessibility of data.
