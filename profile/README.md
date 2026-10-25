@@ -38,7 +38,7 @@ Media. Mind. Memory. Identity. Edge. Trust. AI. Robotics. Everything.
 
 ## Key Projects
 
-### [ffmpeg](https://github.com/Remade-With-Rust/remade_ffmpeg_rs)
+### [FFmpeg_rs](https://github.com/Remade-With-Rust/remade_ffmpeg_rs)
 > **A safe, modern, and pure-Rust reimagining of the industry-standard multimedia framework.**
 
 * **Focus:** Demuxing, muxing, and processing media streams natively without relying on vulnerable C bindings. Built from the ground up for modern pipeline safety.
