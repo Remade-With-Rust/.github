@@ -17,8 +17,6 @@ Remake the internet in Rust and eliminate an entire network attack surface.
 
 Media. Mind. Memory. Identity. Edge. Trust. AI. Robotics. Everything.
 
-Join the rusty revolution.
-
 <a href="https://remadewithrust.com">remadewithrust.com</a>
 
 ---
@@ -40,8 +38,6 @@ Join the rusty revolution.
 
 ## Key Projects
 
-Discover our primary open-source initiatives below:
-
 ### [ffmpeg](https://github.com/Remade-With-Rust/remade_ffmpeg_rs)
 > **A safe, modern, and pure-Rust reimagining of the industry-standard multimedia framework.**
 
@@ -58,14 +54,12 @@ Discover our primary open-source initiatives below:
 
 * **Focus:** Nine packages, one dependency direction: [`core`](https://github.com/Remade-With-Rust/rusty_esp_core), [`dsp`](https://github.com/Remade-With-Rust/rusty_esp_dsp), [`image`](https://github.com/Remade-With-Rust/rusty_esp_image), [`video`](https://github.com/Remade-With-Rust/rusty_esp_video), [`audio`](https://github.com/Remade-With-Rust/rusty_esp_audio), [`signal`](https://github.com/Remade-With-Rust/rusty_esp_signal), [`mid`](https://github.com/Remade-With-Rust/rusty_esp_mid), [`iroh`](https://github.com/Remade-With-Rust/rusty_esp_iroh) and [`arduino`](https://github.com/Remade-With-Rust/rusty_esp_arduino). Pure Rust, no C in the application image.
 * **MATA Home Computer:** a device mints its own `did:mata`, keeps the key in encrypted NVS, and is **adopted** by a signed grant — no vendor cloud, no claiming service, no account.
-* **Verified on silicon:** BLE provisioning from a browser, adoption that survives a hard reset, **721 of 721** media packets over the board's own network, and a maker-signed A/B update booted and kept.
 * **License:** MIT / Apache-2.0 — the 0.1 crates are on [crates.io](https://crates.io/search?q=rusty_esp), early and said so.
 
 ### [Kairos — rusty_rtos | FreeRTOS remade in Rust](https://github.com/Remade-With-Rust/kairos)
 > **FreeRTOS remade in Rust, and proved line by line against the C kernel's own execution trace.**
 
-* **Focus:** The scheduler and its IPC — tasks, queues, semaphores, priority-inheriting mutexes, timers, event groups, stream buffers — as a pure state machine over a `Port` seam. Generational handles, never pointers; `#![forbid(unsafe_code)]` outside the fenced context switch.
-* **Also proved this way:** unmodified FreeRTOS demo programs relink through a C ABI and pass their own checkers, and coreMQTT is remade to **all 218 of its 218 functions**.
+* **Focus:** The scheduler and its IPC — tasks, queues, semaphores, priority-inheriting mutexes, timers, event groups, stream buffers — as a pure state machine over a `Port` seam. Generational handles, never pointers.
 * **MATA Home Computer:** the bare-metal half. A sensor too small for ESP-IDF runs the Janus `no_std` packages on Kairos behind an iroh bridge — still a DID, signed frames, an owner.
 * **License:** MIT / Apache-2.0 — the family is on [crates.io](https://crates.io/search?q=rusty_rtos).
 
@@ -79,7 +73,7 @@ Discover our primary open-source initiatives below:
 ### [SpaceDB (MATA distributed database)](https://github.com/Remade-With-Rust/spacedb)
 > **A local-first, CRDT-native, mesh-replicated database built for a world without data centers.**
 
-* **Focus:** Highly concurrent, distributed data storage that runs natively on the edge or locally without needing constant cloud connection.
+* **Focus:** Highly concurrent, distributed data storage that runs natively on the edge or locally without a cloud connection.
 * **License:** Apache-2.0
 
 ### [Starfire](https://github.com/Remade-With-Rust/starfire) and [Comet](https://github.com/Remade-With-Rust/comet) (Local Gaming)
