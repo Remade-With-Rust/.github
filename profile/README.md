@@ -23,8 +23,8 @@ Media. Mind. Memory. Identity. Edge. Trust. AI. Robotics. Everything.
 
 ## In The Wild with 584,598 Active Installs
 
-> [MATA Network](https://mata.network) is hosting the greatest Disco Party on Earth. A Disco Party is a
-> sovereign distributed cloud and digital freedom toolkit by MATA enabling ownership and accessibility of data.
+> [MATA Network](https://mata.network) is hosting the greatest Disco Party on Earth. Disco Party is the
+> sovereign distributed cloud and digital freedom toolkit enabling ownership and accessibility of data.
 
 > [DLDeploy.com](https://DLDEPLOY.COM) uses over a dozen Remade with Rust portfolio tools to provide browser based
 > AI, and deploys the entire rusty_ESP portfolio for zero-C Espressif technology on ESP-32.
