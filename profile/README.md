@@ -92,18 +92,6 @@ While **Rust** sits at the absolute core of our system programming goals, we use
 
 ---
 
-## Contributing & Community
-
-We are staunch believers in open-source collaboration. If you have an obsession with performance, memory safety, or are looking to build tools that prioritize user autonomy:
-
-1. **Fork** any of our repositories.
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
-3. **Commit** your changes (`git commit -m 'Add some AmazingFeature'`).
-4. **Push** to the branch (`git push origin feature/AmazingFeature`).
-5. Open a **Pull Request**.
-
----
-
 <div align="center">
   <sub>Built with ❤️ by the Remade-With-Rust core team. Empowering reliable, fast, and local-first software.</sub>
 </div>
