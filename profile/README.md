@@ -21,7 +21,7 @@ Media. Mind. Memory. Identity. Edge. Trust. AI. Robotics. Everything.
 
 ---
 
-## In The Wild with 635,781 Active Installs
+## In The Wild with 671,313 Active Installs
 
 > [MATA Network](https://mata.network) is hosting the greatest Disco Party on Earth. Disco Party is the
 > sovereign distributed cloud and digital freedom toolkit enabling ownership and accessibility of data.
