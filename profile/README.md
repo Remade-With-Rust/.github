@@ -65,7 +65,7 @@ Media. Mind. Memory. Identity. Edge. Trust. AI. Robotics. Everything.
 
 
 ### [MID (MATA sovereign identity)](https://github.com/Remade-With-Rust/mid)
-> **Permissionless, self-issued digital identity ownership for Rust.**
+> **Permissionless, self-issued digital identity ownership and Single Sign-On (SSO) for Rust.**
 
 * **Focus:** Verifies sign-in tokens entirely locally with absolute **zero infrastructure calls**. Perfect for high-privacy and decentralization.
 * **License:** Dual MIT/Apache-2.0
