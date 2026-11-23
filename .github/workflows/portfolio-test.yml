@@ -57,12 +57,24 @@ on:
         required: false
         default: ""
         type: string
+      working-directory:
+        description: >-
+          Directory holding the Cargo workspace to test, relative to the
+          repository root. For repositories with no root manifest that keep
+          separate workspaces side by side (rusty-av1-toolkit: rusty_av1d/ and
+          rusty_av1e/), the caller runs one job per directory.
+        required: false
+        default: "."
+        type: string
 
 jobs:
   test:
     name: ${{ inputs.command }}
     runs-on: ${{ inputs.runs-on }}
     timeout-minutes: 60
+    defaults:
+      run:
+        working-directory: ${{ inputs.working-directory }}
     steps:
       - uses: actions/checkout@v7
 
@@ -76,7 +88,8 @@ jobs:
         with:
           # Distinct from a repository's own CI cache: a rollout branch resolves
           # a different graph, and sharing one key would poison both.
-          key: portfolio-test-${{ inputs.command }}-${{ inputs.target }}
+          key: portfolio-test-${{ inputs.command }}-${{ inputs.target }}${{ inputs.working-directory != '.' && format('-{0}', inputs.working-directory) || '' }}
+          workspaces: ${{ inputs.working-directory }}
 
       - name: System packages
         if: inputs.apt-packages != '' && runner.os == 'Linux'
